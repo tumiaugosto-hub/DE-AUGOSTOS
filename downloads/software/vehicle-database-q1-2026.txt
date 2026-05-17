@@ -1,0 +1,21 @@
+DE AUGOSTOS INVESTMENTS - Vehicle Database Update Q1 2026
+==========================================================
+
+Update includes:
+- 2025-2026 model year support
+- New engine variants
+- Updated diagnostic trouble codes
+- New vehicle protocols
+- Bug fixes and performance improvements
+
+Version: 2026.1.0
+Release Date: January 2026
+File Size: 45 MB
+
+Installation:
+1. Close the diagnostic software
+2. Run the updater
+3. Follow on-screen instructions
+
+Note: This is a placeholder. Contact support for
+the actual database update file.

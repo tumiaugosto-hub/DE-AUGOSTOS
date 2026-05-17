@@ -1,0 +1,27 @@
+DE AUGOSTOS INVESTMENTS - Diagnostic Software v4.2
+===================================================
+Platform: Windows/Mac
+
+Installation Instructions:
+1. Extract the ZIP file to your preferred location
+2. Run setup.exe (Windows) or install.pkg (Mac)
+3. Follow the on-screen installation wizard
+4. Restart your computer after installation
+5. Launch the software and enter your license key
+
+System Requirements:
+- Windows 10/11 or macOS 11+
+- 8GB RAM minimum (16GB recommended)
+- 10GB free disk space
+- USB 3.0 port for diagnostic cable
+- Internet connection for updates
+
+Supported Vehicles:
+- BMW (all models 2000+)
+- Mercedes-Benz (all models 2000+)
+- Audi (all models 2000+)
+- Volkswagen (all models 2000+)
+- Porsche (selected models)
+
+Note: This is a placeholder. Contact support for
+the actual software download link and license key.

@@ -1,0 +1,18 @@
+DE AUGOSTOS INVESTMENTS - ECU Reading Tool v2.1
+================================================
+
+Features:
+- Read and clear fault codes
+- Live data streaming
+- ECU remapping support
+- Performance logging
+- Fuel trim adjustment
+
+Compatible Interfaces:
+- K-Line
+- CAN Bus
+- OBD-II
+- DoIP (Ethernet)
+
+Note: This is a placeholder. Contact support for
+the actual software download link and license key.
