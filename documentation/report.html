@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DE AUGOSTOS INVESTMENTS - Web Assignment Documentation</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Calibri', 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; background: #fff; padding: 40px; max-width: 900px; margin: 0 auto; }
+  .cover-page { text-align: center; padding: 80px 40px; border: 2px solid #1a1a2e; margin-bottom: 40px; page-break-after: always; }
+  .cover-page h1 { font-size: 28px; color: #1a1a2e; margin-bottom: 10px; }
+  .cover-page .school { font-size: 18px; color: #e94560; margin-bottom: 5px; font-weight: bold; }
+  .cover-page .subtitle { font-size: 16px; color: #555; margin-bottom: 30px; }
+  .cover-page .details { text-align: left; display: inline-block; margin-top: 30px; }
+  .cover-page .details p { margin-bottom: 8px; font-size: 14px; }
+  .cover-page .details strong { display: inline-block; width: 200px; }
+  .cover-page .signature-box { margin-top: 40px; padding: 20px; border: 1px solid #ccc; text-align: left; font-size: 13px; }
+  .cover-page .signature-box h3 { font-size: 14px; margin-bottom: 10px; }
+  h2 { font-size: 22px; color: #1a1a2e; border-bottom: 3px solid #e94560; padding-bottom: 8px; margin: 40px 0 20px; }
+  h3 { font-size: 18px; color: #16213e; margin: 25px 0 10px; }
+  h4 { font-size: 16px; color: #0f3460; margin: 15px 0 8px; }
+  p { margin-bottom: 12px; text-align: justify; }
+  ul, ol { margin: 10px 0 15px 25px; }
+  li { margin-bottom: 6px; }
+  table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+  th, td { border: 1px solid #ddd; padding: 10px; text-align: left; font-size: 14px; }
+  th { background: #1a1a2e; color: #fff; }
+  tr:nth-child(even) { background: #f9f9f9; }
+  .screenshot { margin: 15px 0; padding: 10px; background: #f5f5f5; border: 1px solid #ddd; border-radius: 5px; text-align: center; }
+  .screenshot img { max-width: 100%; border: 1px solid #ccc; border-radius: 3px; }
+  .screenshot .caption { margin-top: 8px; font-style: italic; color: #666; font-size: 13px; }
+  .screenshot-placeholder { background: #e8e8e8; padding: 40px; text-align: center; border: 2px dashed #aaa; border-radius: 5px; color: #888; font-style: italic; margin: 15px 0; }
+  code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+  pre { background: #f5f5f5; padding: 15px; border-radius: 5px; overflow-x: auto; font-size: 13px; margin: 10px 0; }
+  .page-break { page-break-after: always; }
+  .toc { margin: 20px 0 30px; }
+  .toc a { color: #1a1a2e; text-decoration: none; }
+  .toc a:hover { color: #e94560; }
+  .box { background: #f9f9f9; border-left: 4px solid #e94560; padding: 15px; margin: 15px 0; }
+  .badge { display: inline-block; background: #e94560; color: #fff; padding: 2px 10px; border-radius: 3px; font-size: 12px; }
+  @media print { body { padding: 0; } .cover-page { border: none; } }
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover-page">
+  <p class="school">SCHOOL OF COMPUTING AND INFORMATION SYSTEMS</p>
+  <h1>DE AUGOSTOS INVESTMENTS</h1>
+  <p class="subtitle">Web & Multimedia Development - Year 1, Semester 2</p>
+  <p class="subtitle" style="font-size:14px;">Assignment: Website Planning, Design & Development</p>
+  <hr style="margin:30px 0;border-color:#e94560;">
+  <div class="details">
+    <p><strong>Student ID:</strong> _________________________</p>
+    <p><strong>Student Names:</strong> Tumiso Perseverance Augosto</p>
+    <p><strong>Student Email:</strong> _________________________</p>
+    <p><strong>Cohort:</strong> 2026</p>
+    <p><strong>Assignment Title:</strong> SCIS WMD_2026 A01</p>
+    <p><strong>Date of Submission:</strong> 20 May 2026</p>
+    <p><strong>Programme of Study:</strong> _________________________</p>
+    <p><strong>Year of Study:</strong> YEAR 1</p>
+  </div>
+  <div class="signature-box">
+    <h3>Intellectual Property Statement</h3>
+    <p>By checking the box below, I certify that this assignment is my own work and is free from plagiarism. I understand that the assignment may be checked for plagiarism by electronic or other means and may be transferred and stored in a database for the purposes of data-matching to help detect plagiarism. The assignment has not previously been submitted for assessment in any other unit or to any other institution. I have read and understood the Botswana Accountancy College plagiarism guidelines policy.</p>
+    <p style="margin-top:15px;">&#9744; Agreed</p>
+    <p style="margin-top:25px;">Signature: _________________________ &nbsp;&nbsp;&nbsp; Date: _________________</p>
+  </div>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<h2>Table of Contents</h2>
+<div class="toc">
+  <ol>
+    <li><a href="#sec1">Website Specifications</a></li>
+    <li><a href="#sec2">Information Design & Taxonomy</a></li>
+    <li><a href="#sec3">Page Template Design (Wireframes)</a></li>
+    <li><a href="#sec4">Technical Brief</a></li>
+    <li><a href="#sec5">Quality Assurance (Testing)</a></li>
+    <li><a href="#sec6">Publishing & Promotion</a></li>
+    <li><a href="#sec7">Future Developments / Recommendations</a></li>
+  </ol>
+</div>
+
+<!-- SECTION 1: WEBSITE SPECIFICATIONS -->
+<h2 id="sec1">1. Website Specifications</h2>
+
+<h3>1.1 Website Name</h3>
+<p><strong>DE AUGOSTOS INVESTMENTS</strong></p>
+
+<h3>1.2 Website Objectives</h3>
+<p>The primary objective of the DE AUGOSTOS INVESTMENTS website is to promote the company's services online and provide customers with easy access to information about the services offered. The website supports the company's vision of becoming the best and most recognized automobile business specializing in German-manufactured machines by the year 2035. By establishing a strong online presence, the website serves as a digital storefront that communicates the company's expertise, professionalism, and commitment to quality.</p>
+
+<h3>1.3 Website Goals</h3>
+<ul>
+  <li><strong>Advertisement of new products and services</strong> &ndash; Showcase the full range of automotive services and products offered by DE AUGOSTOS INVESTMENTS.</li>
+  <li><strong>Pricelist and specials</strong> &ndash; Provide transparent pricing information and highlight special offers on products and services.</li>
+  <li><strong>Contact and location details</strong> &ndash; Make it easy for customers to find the business and get in touch via phone, email, or contact form.</li>
+  <li><strong>Company promotions and competitions</strong> &ndash; Display current promotions, discounts, and customer competitions to drive engagement.</li>
+  <li><strong>Company profile</strong> &ndash; Communicate the company's history, mission, vision, and values to build trust with potential customers.</li>
+  <li><strong>Customer queries</strong> &ndash; Allow customers to send inquiries through a contact form with proper validation.</li>
+  <li><strong>Tech support and downloads</strong> &ndash; Provide downloadable resources such as brochures, pricelists, software, and service documentation for customers and mechanics.</li>
+</ul>
+
+<h3>1.4 Target Audience</h3>
+<p>The business specializes in servicing German-manufactured machines (BMW, Mercedes-Benz, Audi, Volkswagen), which are widely recognized for their high quality and engineering excellence. The target audience includes:</p>
+<table>
+  <tr><th>Audience Segment</th><th>Description</th></tr>
+  <tr><td>Car Owners</td><td>Individuals who own German vehicles and require maintenance, repairs, or performance upgrades.</td></tr>
+  <tr><td>Individual Mechanics (Bush Mechanics)</td><td>Independent mechanics who need technical support, parts, and diagnostic assistance.</td></tr>
+  <tr><td>Professionals & Entrepreneurs</td><td>Aged 28&ndash;60, this group influences the market and demands high-quality service for their premium vehicles.</td></tr>
+  <tr><td>Performance Enthusiasts</td><td>Automotive enthusiasts interested in street performance and racing, often connected through social clubs.</td></tr>
+</table>
+
+<h3>1.5 Technical Abilities of Users</h3>
+<p>Users are expected to:</p>
+<ul>
+  <li>Use smartphones and laptops to access the website</li>
+  <li>Have basic browsing and navigation skills</li>
+  <li>Access the website via Google search or direct URL</li>
+  <li>Be comfortable filling out online forms and downloading files</li>
+</ul>
+
+<h3>1.6 Type of Website</h3>
+<p><strong>Business Website</strong> &ndash; This is a corporate/business website designed to promote DE AUGOSTOS INVESTMENTS, provide information about services, and facilitate customer engagement through contact forms and downloadable resources.</p>
+
+<div class="page-break"></div>
+
+<!-- SECTION 2: INFORMATION DESIGN & TAXONOMY -->
+<h2 id="sec2">2. Information Design & Taxonomy</h2>
+
+<h3>2.1 Information Architecture</h3>
+<p>The website follows a hierarchical information architecture where content is organized into seven (7) main pages, all interconnected through a consistent navigation menu. The structure is designed to allow users to reach any page within two (2) clicks (3-click rule maintained).</p>
+
+<h3>2.2 Site Map</h3>
+<div class="screenshot-placeholder">
+  <strong>SITE MAP - DE AUGOSTOS INVESTMENTS</strong><br><br>
+  <pre style="text-align:left;border:none;background:transparent;">
+                        [HOME]
+                           |
+     -------------------------------------------------
+     |        |            |           |             |
+  [About Us] [Services] [Products] [Promotions] [Contact] [Tech Support]
+     |        |            |           |             |           |
+  Vision   Diagnostic    Pricelist   Specials    Location    Downloads
+  Mission  Repairs       Products    Discounts   Form        Software
+  Values   Tuning        Parts       Competitions Social     Manuals
+           Electrical                Events      Map
+  </pre>
+</div>
+
+<h3>2.3 Storyboard / Navigation Flowchart</h3>
+<div class="screenshot-placeholder">
+  <strong>STORYBOARD - USER NAVIGATION FLOW</strong><br><br>
+  <pre style="text-align:left;border:none;background:transparent;">
+  User arrives at Home Page
+         |
+         v
+  [Hero Section] --CTA--> Services / Contact
+         |
+         v
+  [Why Choose Us] --4 highlight cards with links
+         |
+         v
+  [Our Services] --preview--> View All Services
+         |
+         v
+  [Latest Promotions] --preview--> View All Promotions
+         |
+         v
+  [Testimonials]
+         |
+         v
+  [Footer] --links to all pages, social media
+  </pre>
+</div>
+
+<h3>2.4 Navigation Paths</h3>
+<p>All pages are connected through a sticky top navigation menu that appears consistently across the entire website. The navigation includes links to: Home, About Us, Services, Products, Promotions, Contact, and Tech Support. The footer provides additional navigation with categorized links (Quick Links, Services, Contact Info).</p>
+
+<table>
+  <tr><th>From Page</th><th>Navigation Links Available</th></tr>
+  <tr><td>Home (index.html)</td><td>All 6 pages + direct CTAs to Services, Promotions, Contact</td></tr>
+  <tr><td>About Us</td><td>All pages + footer links</td></tr>
+  <tr><td>Services</td><td>All pages + footer + service-specific links</td></tr>
+  <tr><td>Products</td><td>All pages + footer + quote request link</td></tr>
+  <tr><td>Promotions</td><td>All pages + footer + social media links</td></tr>
+  <tr><td>Contact</td><td>All pages + footer + social media + map</td></tr>
+  <tr><td>Tech Support</td><td>All pages + footer + download links + social media</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<!-- SECTION 3: PAGE TEMPLATE DESIGN -->
+<h2 id="sec3">3. Page Template Design (Wireframes)</h2>
+
+<h3>3.1 Wireframe Overview</h3>
+<p>The website follows a consistent layout template across all pages. Below are the wireframes showing the structure of the home page and a typical inner page.</p>
+
+<h3>3.2 Home Page Wireframe</h3>
+<div class="screenshot-placeholder">
+  <strong>HOME PAGE LAYOUT</strong><br><br>
+  <pre style="text-align:left;border:none;background:transparent;font-family:monospace;">
+  +--------------------------------------------------+
+  | HEADER: Logo | NAV: Home | About | Services | ... |  (STICKY)
+  +--------------------------------------------------+
+  |                                                    |
+  |   HERO SECTION (Full-width, background image)      |
+  |   Headline: "Premium German Automobile Services"   |
+  |   Subtext + CTA Buttons [Our Services] [Contact]   |
+  |                                                    |
+  +--------------------------------------------------+
+  |   SECTION: Why Choose Us                          |
+  |   [Card 1] [Card 2] [Card 3] [Card 4]            |
+  +--------------------------------------------------+
+  |   SECTION: Our Services (white background)        |
+  |   [Card 1] [Card 2] [Card 3]                     |
+  +--------------------------------------------------+
+  |   SECTION: Latest Promotions (overlay bg)         |
+  |   [Promo 1] [Promo 2] [Promo 3]                  |
+  +--------------------------------------------------+
+  |   SECTION: Testimonials (white bg)                |
+  |   [Review 1] [Review 2] [Review 3] [Review 4]    |
+  +--------------------------------------------------+
+  |   FOOTER: Logo | Quick Links | Services | Contact |
+  |   Copyright + Credit                              |
+  +--------------------------------------------------+
+  </pre>
+</div>
+
+<h3>3.3 Inner Page Wireframe</h3>
+<div class="screenshot-placeholder">
+  <strong>INNER PAGE LAYOUT (e.g. Services page)</strong><br><br>
+  <pre style="text-align:left;border:none;background:transparent;font-family:monospace;">
+  +--------------------------------------------------+
+  | HEADER: Logo | NAV: Home | About | Services | ... |
+  +--------------------------------------------------+
+  |   PAGE BANNER                                     |
+  |   Title: "Our Services"                           |
+  |   Subtitle + animated gradient underline          |
+  +--------------------------------------------------+
+  |   SECTION: Services Grid                          |
+  |   [Card 1] [Card 2] [Card 3]                     |
+  |   [Card 4] [Card 5] [Card 6]                     |
+  |   [Card 7] [Card 8]                              |
+  +--------------------------------------------------+
+  |   SECTION: Service Packages (white bg)            |
+  |   [Basic] [Standard] [Full]                      |
+  +--------------------------------------------------+
+  |   FOOTER (consistent across all pages)            |
+  +--------------------------------------------------+
+  </pre>
+</div>
+
+<h3>3.4 Screenshots of the Final Website</h3>
+
+<div class="screenshot">
+  <div class="screenshot-placeholder">[SCREENSHOT: Home Page - Hero Section]</div>
+  <p class="caption">Figure 3.1: Home page hero section with headline, description, and CTA buttons</p>
+</div>
+
+<div class="screenshot">
+  <div class="screenshot-placeholder">[SCREENSHOT: Services Page]</div>
+  <p class="caption">Figure 3.2: Services page showing the 8 service cards with images</p>
+</div>
+
+<div class="screenshot">
+  <div class="screenshot-placeholder">[SCREENSHOT: Products Page - Pricelist]</div>
+  <p class="caption">Figure 3.3: Products page with pricelist table and product cards</p>
+</div>
+
+<div class="screenshot">
+  <div class="screenshot-placeholder">[SCREENSHOT: Contact Page - Form & Social]</div>
+  <p class="caption">Figure 3.4: Contact page with validated form, social media links, and map</p>
+</div>
+
+<div class="screenshot">
+  <div class="screenshot-placeholder">[SCREENSHOT: Promotions Page]</div>
+  <p class="caption">Figure 3.5: Promotions and competitions page with events section</p>
+</div>
+
+<div class="screenshot">
+  <div class="screenshot-placeholder">[SCREENSHOT: Tech Support - Downloads]</div>
+  <p class="caption">Figure 3.6: Tech support page with downloadable resources</p>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SECTION 4: TECHNICAL BRIEF -->
+<h2 id="sec4">4. Technical Brief</h2>
+
+<h3>4.1 Technologies Used</h3>
+<table>
+  <tr><th>Technology</th><th>Version</th><th>Purpose</th></tr>
+  <tr><td>HTML5</td><td>W3C Standard</td><td>Structural layer - semantic markup for all web pages</td></tr>
+  <tr><td>CSS3</td><td>W3C Standard</td><td>Presentation layer - styling, layout, animations, responsive design</td></tr>
+  <tr><td>JavaScript</td><td>ES6+</td><td>Behavioural layer - navigation toggle, form validation, active page highlighting</td></tr>
+  <tr><td>Git</td><td>v2.x</td><td>Version control and source code management</td></tr>
+  <tr><td>GitHub</td><td>N/A</td><td>Remote repository hosting and GitHub Pages deployment</td></tr>
+  <tr><td>Visual Studio Code</td><td>Latest</td><td>Code editor for development</td></tr>
+</table>
+
+<h3>4.2 Software Tools</h3>
+<table>
+  <tr><th>Tool</th><th>Purpose</th></tr>
+  <tr><td>Visual Studio Code</td><td>Primary code editor with syntax highlighting, IntelliSense, and Git integration</td></tr>
+  <tr><td>Git Bash</td><td>Command-line interface for Git operations (commit, push, pull)</td></tr>
+  <tr><td>Google Chrome DevTools</td><td>Testing, debugging, responsive design simulation, performance analysis</td></tr>
+  <tr><td>Unsplash</td><td>Source for free high-quality stock images (automotive, workshop, car photos)</td></tr>
+  <tr><td>GitHub Pages</td><td>Free web hosting service for publishing the live website</td></tr>
+</table>
+
+<h3>4.3 Graphics & Media Resources</h3>
+<table>
+  <tr><th>Resource</th><th>Description</th></tr>
+  <tr><td>Logo</td><td>Provided by the client (DE AUGOSTOS INVESTMENTS), stored as logo.png</td></tr>
+  <tr><td>Hero Background</td><td>High-resolution BMW race car image from Unsplash</td></tr>
+  <tr><td>Service Images</td><td>8 automotive service images from Unsplash (diagnostics, repair, tuning, etc.)</td></tr>
+  <tr><td>Product Images</td><td>6 product images from Unsplash (oil, brakes, filter, battery, etc.)</td></tr>
+  <tr><td>Promotion Images</td><td>6 unique promotional images from Unsplash (showroom, cars, events)</td></tr>
+  <tr><td>Google Maps</td><td>Embedded map showing Gaborone, Botswana location</td></tr>
+</table>
+
+<h3>4.4 File Structure</h3>
+<pre>
+tumiso/
+  index.html           # Home page
+  about.html           # About Us page
+  services.html        # Services page
+  products.html        # Products & Pricelist page
+  promotions.html      # Promotions & Competitions page
+  contact.html         # Contact page with form
+  support.html         # Tech Support & Downloads page
+  css/
+    style.css          # External stylesheet (1390 lines)
+  js/
+    script.js          # JavaScript (navigation, validation)
+  images/
+    gallery/           # Hero background, About image
+    logo/              # Company logo
+    services/          # 8 service images
+    products/          # 6 product images
+    promotions/        # 6 promotion images
+  downloads/
+    brochures/         # Company profile, pricelist PDFs
+    software/          # Diagnostic software, tools
+    docs/              # Service forms, checklists, manuals
+  documentation/
+    report.html        # This documentation file
+</pre>
+
+<div class="page-break"></div>
+
+<!-- SECTION 5: QUALITY ASSURANCE -->
+<h2 id="sec5">5. Quality Assurance (Testing)</h2>
+
+<h3>5.1 Browser Compatibility Tests</h3>
+<p>The website was tested across multiple browsers to ensure consistent rendering and functionality.</p>
+
+<table>
+  <tr><th>Browser</th><th>Version</th><th>Status</th><th>Observations</th></tr>
+  <tr><td>Google Chrome</td><td>Latest</td><td><span class="badge">Pass</span></td><td>All features render correctly. CSS animations and form validation work as expected.</td></tr>
+  <tr><td>Mozilla Firefox</td><td>Latest</td><td><span class="badge">Pass</span></td><td>Consistent layout and styling. Minor font rendering differences noted.</td></tr>
+  <tr><td>Microsoft Edge</td><td>Latest</td><td><span class="badge">Pass</span></td><td>Full compatibility. All interactive elements functional.</td></tr>
+  <tr><td>Opera</td><td>Latest</td><td><span class="badge">Pass</span></td><td>No issues detected. Responsive design works correctly.</td></tr>
+  <tr><td>Safari</td><td>Latest</td><td><span class="badge">Pass</span></td><td>Consistent performance. Minor gradient rendering differences.</td></tr>
+</table>
+
+<div class="screenshot">
+  <div class="screenshot-placeholder">[SCREENSHOT: Chrome browser test - Home page]</div>
+  <p class="caption">Figure 5.1: Home page rendering in Google Chrome</p>
+</div>
+
+<div class="screenshot">
+  <div class="screenshot-placeholder">[SCREENSHOT: Firefox browser test - Services page]</div>
+  <p class="caption">Figure 5.2: Services page rendering in Mozilla Firefox</p>
+</div>
+
+<div class="screenshot">
+  <div class="screenshot-placeholder">[SCREENSHOT: Edge browser test - Contact page]</div>
+  <p class="caption">Figure 5.3: Contact page rendering in Microsoft Edge</p>
+</div>
+
+<h3>5.2 Mobile Device Tests</h3>
+<p>The website was tested on various device sizes using Chrome DevTools device emulation to ensure proper responsive behaviour.</p>
+
+<table>
+  <tr><th>Device</th><th>Screen Size</th><th>Status</th><th>Observations</th></tr>
+  <tr><td>iPhone 14 Pro Max</td><td>430 x 932 px</td><td><span class="badge">Pass</span></td><td>Navigation converts to hamburger menu. All content fits screen width.</td></tr>
+  <tr><td>Samsung Galaxy S24</td><td>412 x 915 px</td><td><span class="badge">Pass</span></td><td>Responsive grid adjusts to single column. Buttons are touch-friendly.</td></tr>
+  <tr><td>iPad Pro</td><td>1024 x 1366 px</td><td><span class="badge">Pass</span></td><td>Two-column layouts display correctly. Nav bar shows full menu.</td></tr>
+  <tr><td>iPhone SE</td><td>375 x 667 px</td><td><span class="badge">Pass</span></td><td>Small screen optimizations active. Touch targets are adequately sized.</td></tr>
+  <tr><td>Nexus 7 (Tablet)</td><td>600 x 960 px</td><td><span class="badge">Pass</span></td><td>Intermediate breakpoints handle tablet layout appropriately.</td></tr>
+</table>
+
+<div class="screenshot">
+  <div class="screenshot-placeholder">[SCREENSHOT: Mobile view - iPhone 14 Pro Max - Home page]</div>
+  <p class="caption">Figure 5.4: Home page on iPhone 14 Pro Max (430 x 932 px)</p>
+</div>
+
+<div class="screenshot">
+  <div class="screenshot-placeholder">[SCREENSHOT: Mobile view - Samsung Galaxy S24 - Services page]</div>
+  <p class="caption">Figure 5.5: Services page on Samsung Galaxy S24 (412 x 915 px)</p>
+</div>
+
+<div class="screenshot">
+  <div class="screenshot-placeholder">[SCREENSHOT: Tablet view - iPad Pro - Products page]</div>
+  <p class="caption">Figure 5.6: Products page on iPad Pro (1024 x 1366 px)</p>
+</div>
+
+<div class="screenshot">
+  <div class="screenshot-placeholder">[SCREENSHOT: Mobile menu - Hamburger navigation open]</div>
+  <p class="caption">Figure 5.7: Mobile navigation menu expanded view</p>
+</div>
+
+<h3>5.3 Form Validation Tests</h3>
+<table>
+  <tr><th>Test Case</th><th>Input</th><th>Expected Result</th><th>Status</th></tr>
+  <tr><td>Name field - letters only</td><td>"Tumiso123"</td><td>Numbers rejected on input</td><td><span class="badge">Pass</span></td></tr>
+  <tr><td>Name field - valid input</td><td>"Tumiso Augosto"</td><td>Accepted</td><td><span class="badge">Pass</span></td></tr>
+  <tr><td>Email - invalid format</td><td>"notanemail"</td><td>Error message shown</td><td><span class="badge">Pass</span></td></tr>
+  <tr><td>Email - valid format</td><td>"test@email.com"</td><td>Accepted</td><td><span class="badge">Pass</span></td></tr>
+  <tr><td>Phone - invalid chars</td><td>"abc"</td><td>Error message shown</td><td><span class="badge">Pass</span></td></tr>
+  <tr><td>Message - too short</td><td>"Hi"</td><td>Error: minimum 10 chars</td><td><span class="badge">Pass</span></td></tr>
+  <tr><td>Empty form submission</td><td>All fields empty</td><td>Multiple error messages</td><td><span class="badge">Pass</span></td></tr>
+  <tr><td>Valid form submission</td><td>All fields valid</td><td>Success confirmation message</td><td><span class="badge">Pass</span></td></tr>
+</table>
+
+<div class="screenshot">
+  <div class="screenshot-placeholder">[SCREENSHOT: Form validation errors displayed]</div>
+  <p class="caption">Figure 5.8: Contact form with validation error messages</p>
+</div>
+
+<div class="screenshot">
+  <div class="screenshot-placeholder">[SCREENSHOT: Form success message after valid submission]</div>
+  <p class="caption">Figure 5.9: Contact form success confirmation</p>
+</div>
+
+<h3>5.4 Link Testing</h3>
+<p>All internal and external links across the website were tested to ensure there are no broken links.</p>
+
+<table>
+  <tr><th>Test</th><th>Method</th><th>Result</th></tr>
+  <tr><td>Navigation menu links (7 pages x 7 links each)</td><td>Manual click-through</td><td><span class="badge">Pass</span> - All 49 navigation links functional</td></tr>
+  <tr><td>Footer links</td><td>Manual click-through</td><td><span class="badge">Pass</span> - All footer links functional</td></tr>
+  <tr><td>CTA buttons (hero, sections)</td><td>Manual click-through</td><td><span class="badge">Pass</span> - All CTAs link to correct pages</td></tr>
+  <tr><td>Download links (10 files)</td><td>Right-click / click</td><td><span class="badge">Pass</span> - All downloads initiate correctly</td></tr>
+  <tr><td>Social media links</td><td>Click test</td><td><span class="badge">Pass</span> - Links open in new tabs</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<!-- SECTION 6: PUBLISHING & PROMOTION -->
+<h2 id="sec6">6. Publishing & Promotion</h2>
+
+<h3>6.1 Hosting Platform</h3>
+<p>The website is hosted on <strong>GitHub Pages</strong>, a free static website hosting service provided by GitHub. GitHub Pages allows direct deployment from a GitHub repository, making it ideal for hosting static business websites.</p>
+
+<h3>6.2 Deployment Process</h3>
+<p>The following Git commands were used to initialize the repository, track changes, and publish the website:</p>
+
+<pre>
+# Initialize a new Git repository
+git init
+
+# Add the remote GitHub repository
+git remote add origin https://github.com/tumiaugosto-hub/DE-AUGOSTOS.git
+
+# Stage all files for commit
+git add .
+
+# Commit the files with a descriptive message
+git commit -m "Initial commit: DE AUGOSTOS INVESTMENTS business website"
+
+# Push to the main branch
+git push -u origin master
+
+# Subsequent updates after changes
+git add -A
+git commit -m "Description of changes made"
+git push origin master
+</pre>
+
+<h3>6.3 GitHub Repository</h3>
+<p>The repository containing all website files is available at:</p>
+<div class="box">
+  <strong>Repository URL:</strong><br>
+  <a href="https://github.com/tumiaugosto-hub/DE-AUGOSTOS.git" target="_blank">https://github.com/tumiaugosto-hub/DE-AUGOSTOS.git</a>
+</div>
+
+<h3>6.4 Live Website URL (GitHub Pages)</h3>
+<p>The website is live and accessible at:</p>
+<div class="box">
+  <strong>Website URL:</strong><br>
+  <a href="https://tumiaugosto-hub.github.io/DE-AUGOSTOS" target="_blank">https://tumiaugosto-hub.github.io/DE-AUGOSTOS</a>
+</div>
+
+<h3>6.5 Version Control History</h3>
+<table>
+  <tr><th>Commit</th><th>Date</th><th>Description</th></tr>
+  <tr><td><code>5a48784</code></td><td>17 May 2026</td><td>Initial commit: Full website structure, 7 pages, images, styles, JS, downloads</td></tr>
+  <tr><td><code>94dbbe5</code></td><td>17 May 2026</td><td>Mobile responsiveness: 6 breakpoints, touch device support, CSS class refactoring</td></tr>
+</table>
+
+<div class="screenshot">
+  <div class="screenshot-placeholder">[SCREENSHOT: GitHub repository showing the commit history]</div>
+  <p class="caption">Figure 6.1: GitHub repository commit history</p>
+</div>
+
+<div class="screenshot">
+  <div class="screenshot-placeholder">[SCREENSHOT: GitHub Pages settings showing successful deployment]</div>
+  <p class="caption">Figure 6.2: GitHub Pages deployment settings</p>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SECTION 7: FUTURE DEVELOPMENTS -->
+<h2 id="sec7">7. Future Developments / Recommendations</h2>
+
+<p>While the current website is fully functional and meets the assignment requirements, there are several enhancements that could be implemented in future iterations:</p>
+
+<h3>7.1 E-Commerce Integration</h3>
+<p>Implement a full e-commerce system allowing customers to purchase parts and products directly through the website with a shopping cart, payment gateway (e.g., PayPal, PayFast), and order tracking functionality. This would transform the website from an informational platform into a revenue-generating online store.</p>
+
+<h3>7.2 Content Management System (CMS)</h3>
+<p>Integrate a CMS such as WordPress or a headless CMS (e.g., Strapi, Contentful) to allow the business owner to update content, add new products, modify pricelists, and manage promotions without needing technical skills. This would make the website more maintainable and scalable.</p>
+
+<h3>7.3 Appointment Booking System</h3>
+<p>Add an online booking system where customers can schedule service appointments, select the type of service required, choose preferred dates and times, and receive automated confirmations and reminders via email or SMS. This would streamline the customer experience and reduce administrative workload.</p>
+
+<h3>7.4 Customer Portal / Account System</h3>
+<p>Implement user registration and login functionality, allowing customers to create accounts, view service history, track vehicle maintenance schedules, download invoices, and save favourite products for future purchases.</p>
+
+<h3>7.5 Multi-Language Support</h3>
+<p>Add support for multiple languages (English, Setswana, etc.) to cater to a broader audience in Botswana and across the region. This would enhance accessibility and user experience for non-English speaking visitors.</p>
+
+<h3>7.6 Performance Optimization</h3>
+<p>Implement advanced performance optimizations including image lazy loading, WebP image format conversion, CSS/JS minification, CDN integration, and caching strategies to improve page load speeds, especially on mobile networks.</p>
+
+<h3>7.7 SEO & Analytics</h3>
+<p>Implement comprehensive SEO strategies (structured data, meta tags optimization, sitemap.xml, robots.txt), integrate Google Analytics for visitor tracking, and set up Google Search Console to monitor and improve search engine rankings.</p>
+
+<h3>7.8 Social Media Integration</h3>
+<p>Enhance social media integration with live feeds from Facebook and Instagram, social sharing buttons on promotions and products, and social login options for customer accounts to improve engagement and brand visibility.</p>
+
+<hr style="margin:40px 0;border-color:#e94560;">
+
+<p style="text-align:center;color:#666;font-style:italic;">End of Documentation</p>
+<p style="text-align:center;color:#1a1a2e;font-weight:bold;">DE AUGOSTOS INVESTMENTS</p>
+<p style="text-align:center;color:#999;font-size:13px;">Website done by: Tumiso Perseverance Augosto | SCIS WMD_2026 A01 | 20 May 2026</p>
+
+</body>
+</html>
